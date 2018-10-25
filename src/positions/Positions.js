@@ -3,12 +3,9 @@ import Iframe from "react-iframe";
 
 const Positions = () => {
   return (
-    <Iframe
-      url="https://www.shareville.no/widget/portfolio/324475/positions"
-      frameborder="0"
-      allowtransparency="true"
-      scrolling="yes"
-    />
+    <div className="positions">
+      <Iframe url="https://www.shareville.no/widget/portfolio/324475/positions?limit=10" />
+    </div>
   );
 };
 
