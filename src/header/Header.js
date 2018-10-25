@@ -3,7 +3,7 @@ import "./Header.css";
 
 class Header extends Component {
   render() {
-    return <div className="header">HER KOMMER FONDET</div>
+    return <div className="header">{this.props.text}</div>;
   }
 }
 

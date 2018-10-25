@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Header from './header/Header.js';
+import React from "react";
+import ReactDOM from "react-dom";
+import Root from "./root/Root.js";
 
-ReactDOM.render(<Header />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById("root"));
