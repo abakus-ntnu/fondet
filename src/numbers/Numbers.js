@@ -14,7 +14,10 @@ class Numbers extends Component {
 
   componentDidMount() {
     this.interval = setInterval(
-      () => this.setState({ money: this.state.money + 1 }),
+      () =>
+        this.setState({
+          money: 2480000 + Math.floor(Date.now() / 10) - 154047868893
+        }),
       20
     );
   }
