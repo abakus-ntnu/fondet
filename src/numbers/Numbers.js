@@ -8,13 +8,23 @@ class Number extends Component {
 }
 
 class Numbers extends Component {
+  state = {
+    money: 2480000
+  };
+
+  componentDidMount() {
+    this.interval = setInterval(
+      () => this.setState({ money: this.state.money + 1 }),
+      20
+    );
+  }
+
   render() {
-    const random = []
-    for (let index = 0; index < 8; index++) {
-      random.push(Math.floor((Math.random() * 9) + 1));
-      console.log(random)
-    }
-    const numbers = random.map(num => <Number number={num} />);
+    const money = this.state.money;
+    const numbers = money
+      .toString(10)
+      .split("")
+      .map(num => <Number number={num} />);
     return <div className="numbers">{numbers}</div>;
   }
 }
