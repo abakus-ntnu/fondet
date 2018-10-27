@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../header/Header";
 import Numbers from "../numbers/Numbers";
-import "./Root.css";
+//import "./Root.css";
 
 class Root extends Component {
   render() {

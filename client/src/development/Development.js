@@ -4,7 +4,11 @@ import Iframe from "react-iframe";
 const Development = () => {
   return (
     <div className="development">
-      <Iframe url="https://www.shareville.no/widget/portfolio/324475/yield" />
+      <Iframe
+        url="https://www.shareville.no/widget/portfolio/324475/yield"
+        scrolling="yes"
+        position="relative"
+      />
     </div>
   );
 };

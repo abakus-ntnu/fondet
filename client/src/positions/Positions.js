@@ -1,40 +1,69 @@
 import axios from "axios";
 import React, { Component } from "react";
-import { VictoryPie } from "victory";
+import PieChart from "./pieChart/PieChart.js";
+import NamesList from "./namesList/NamesList.js";
 
 class Positions extends Component {
   constructor() {
     super();
-    this.state = { res: [], data: [] };
+    this.state = {
+      res: [],
+      data: [],
+      colorScale: [
+        "rgb(72, 207, 212)",
+        "rgb(33, 161, 166)",
+        "rgb(13, 124, 128)",
+        "rgb(202, 101, 165)",
+        "rgb(217, 110, 110)",
+        "rgb(200, 85, 85)",
+        "rgb(234, 236, 102)",
+        "rgb(168, 217, 110)",
+        "rgb(227, 227, 227)"
+      ]
+    };
   }
-  //Getting info from nordnet-api and cleaning for victorypie
+  //Getting info from backend and cleaning for victorypie. Backend fetching from nordnet api.
   async componentDidMount() {
     const res = await axios.get("/api/positions");
     this.setState({ res: res.data });
-    console.log(res.data.length);
-    console.log(res.data[0].instrument.name);
+    var cashCount = 0;
     for (var i = 0; i < res.data.length; i++) {
       this.setState({
         data: [
           ...this.state.data,
-          { name: res.data[i].instrument.name, percent: res.data[i].percent }
+          {
+            name: res.data[i].instrument.name,
+            percent: res.data[i].percent,
+            color: this.state.colorScale[i]
+          }
         ]
       });
+
+      cashCount += res.data[i].percent;
     }
+    this.setState({
+      data: [
+        ...this.state.data,
+        {
+          name: "Kontanter",
+          percent: 100 - cashCount,
+          color: this.state.colorScale[this.state.colorScale.length - 1]
+        }
+      ]
+    });
+    this.setState({ data: this.state.data.sort(this.sortData) });
+    console.log(this.state);
   }
+
+  sortData = (a, b) => {
+    return a.percent - b.percent;
+  };
 
   render() {
     return (
-      <div>
-        <VictoryPie
-          data={this.state.data}
-          x="name"
-          y="percent"
-          radius={100}
-          style={{
-            labels: { fill: "black", fontSize: 5, fontWeight: "bold" }
-          }}
-        />
+      <div className="positions">
+        <PieChart state={this.state} />
+        <NamesList state={this.state} />
       </div>
     );
   }

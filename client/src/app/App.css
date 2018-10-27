@@ -1,9 +1,79 @@
 .development {
-  margin-top: 100px;
+  height: 320px;
+  border-style: solid;
+  border-width: thin;
+  border-color: beige;
 }
 
 .positions {
-  margin-top: 100px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-top: 5px;
+  position: relative;
+  overflow: auto;
+  border-style: solid;
+  border-color: beige;
+  border-width: 1px;
+  float: left;
+  overflow: hidden;
+  padding-right: 5px;
+  height: 350px;
+}
+
+.namesList {
+  position: relative;
+  float: left;
+  height: auto;
+}
+
+.namesList p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pieChart {
+  position: relative;
+  float: left;
+  height: auto;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background: #758586;
+  color: white;
+  height: 100px;
+  font-family: "VT323", monospace;
+  letter-spacing: 20px;
+}
+
+.number {
+  background: grey;
+  color: white;
+  border-radius: 5px;
+  width: 50px;
+  height: 75px;
+  text-align: center;
+  font-size: 75px;
+  margin: 5px;
+  line-height: 75px;
+  font-family: "VT323", monospace;
+  float: left;
+}
+
+.numbers {
+  position: flex;
+  justify-content: space-evenly;
+  padding: 84px;
+
+  margin-left: 5px;
+  margin-top: 5px;
+  float: left;
+  border-style: solid;
+  border-color: beige;
+  border-width: 1px;
+  height: 182px;
+}
+
+.app {
+  overflow: hidden;
 }

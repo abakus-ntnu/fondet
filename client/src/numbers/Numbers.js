@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Numbers.css";
 
 class Number extends Component {
   render() {
