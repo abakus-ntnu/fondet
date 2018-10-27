@@ -7,11 +7,7 @@ class Positions extends Component {
     super();
     this.state = { res: [], data: [] };
   }
-<<<<<<< HEAD
   //Getting info from nordnet-api and cleaning for victorypie
-=======
-
->>>>>>> collatty
   async componentDidMount() {
     const res = await axios.get("/api/v1/portfolios/324475/positions");
     this.setState({ res: res.data });
