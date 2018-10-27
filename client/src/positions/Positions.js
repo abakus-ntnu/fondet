@@ -9,9 +9,7 @@ class Positions extends Component {
   }
   //Getting info from nordnet-api and cleaning for victorypie
   async componentDidMount() {
-    const res = await axios.get(
-      "https://www.shareville.no/api/v1/portfolios/324475/positions"
-    );
+    const res = await axios.get("/api/positions");
     this.setState({ res: res.data });
     console.log(res.data.length);
     console.log(res.data[0].instrument.name);

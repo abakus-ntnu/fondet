@@ -1,34 +1,30 @@
 {
   "name": "fondet",
-  "version": "0.0.1",
-  "private": true,
-  "proxy": "https://www.shareville.no",
+  "version": "1.0.0",
+  "description": "backend til fondet.abakus.no",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abakus-ntnu/fondet.git"
+  },
+  "keywords": [
+    "fondet",
+    "abakus"
+  ],
+  "author": "Collatty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abakus-ntnu/fondet/issues"
+  },
+  "homepage": "https://github.com/abakus-ntnu/fondet#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "lodash": "^4.17.11",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-iframe": "^1.3.3",
-    "react-scripts": "2.0.5",
-    "victory": "^30.5.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "react-scripts build && echo \"fondet.abakus.no\"> build/CNAME && gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "express": "^4.16.4"
+  }
 }
