@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Header text="PENGEBINGEN" />
+        <Header text="ABAKUS FOND" />
         <Development />
         <Positions />
         <Numbers />
