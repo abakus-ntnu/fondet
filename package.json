@@ -13,10 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/abakus-ntnu/fondet.git"
   },
-  "keywords": [
-    "fondet",
-    "abakus"
-  ],
+  "keywords": ["fondet", "abakus"],
   "author": "Collatty",
   "license": "ISC",
   "bugs": {
@@ -25,7 +22,10 @@
   "homepage": "https://github.com/abakus-ntnu/fondet#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "express": "^4.16.4",
-    "nodemon": "^1.18.5"
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5",
+    "concurrently": "^4.0.1"
   }
 }
