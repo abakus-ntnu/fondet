@@ -4,9 +4,13 @@ const namesList = props => {
   console.log(props.state.data);
   const listItems = props.state.data.map(data => (
     <p key={`${data.name}`}>
-      <span style={{ color: data.color, fontSize: 20 }}>{"\u2022"}</span>{" "}
-      {data.name} {data.percent.toFixed(2)}
-      {" %"}
+      <div className="name">
+        <span style={{ color: data.color, fontSize: 20 }}>{"\u2022"}</span>{" "}
+        <p>{data.name}</p>{" "}
+        <p>
+          {data.percent.toFixed(2)} {" %"}
+        </p>
+      </div>
     </p>
   ));
   return (
