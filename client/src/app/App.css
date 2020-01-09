@@ -8,7 +8,6 @@ html{
   border-color: beige;
   width: 100%;
   text-align:center;
-  padding-top:50px;
   align-items: center;
   justify-content: center;
 }
@@ -44,6 +43,15 @@ html{
   letter-spacing: 10px;
 }
 
+.development h2 {
+  font-size: 25px;
+  color: gray;
+  font-family: Courier New, Courier, monospace;
+  letter-spacing: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .namesList {
   height: auto;
 }
@@ -59,7 +67,6 @@ html{
 }
 .header {
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 50px;
   background: #758586;
@@ -67,7 +74,17 @@ html{
   height: 100px;
   width: 100%;
   font-family: "VT323", monospace;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
+}
+.header.left{
+  padding-left: 50px;
+  justify-content: left;
+}
+.header.center{
+  justify-content: center;
+}
+.header.right{
+  justify-content: center;
 }
 
 .number {
