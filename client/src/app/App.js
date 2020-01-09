@@ -4,6 +4,7 @@ import Header from "../header/Header.js";
 import Positions from "../positions/Positions.js";
 import Development from "../development/Development.js";
 import Numbers from "../numbers/Numbers.js";
+import Philosophy from "../philosophy/Philosophy.js";
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Development />
         <Positions />
         <Numbers />
+        <Philosophy />
       </div>
     );
   }

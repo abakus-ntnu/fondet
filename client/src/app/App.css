@@ -42,6 +42,15 @@ html{
   color: gray;
   font-family: "VT323", monospace;
   letter-spacing: 10px;
+  text-align: center;
+}
+
+.philosophy h2 {
+  font-size: 35px;
+  color: gray;
+  font-family: "VT323", monospace;
+  letter-spacing: 10px;
+  text-align: center;
 }
 
 .namesList {
