@@ -41,6 +41,21 @@ html{
   color: gray;
   font-family: "VT323", monospace;
   letter-spacing: 10px;
+  text-align: center;
+}
+
+.philosophy h2 {
+  font-size: 35px;
+  color: gray;
+  font-family: "VT323", monospace;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.philosophy p {
+  color: #394b59;
+  font-size: 20px;
+  font-family: Raleway, Helvetica Neue, Arial, sans-serif;
 }
 
 .development h2 {
