@@ -16,8 +16,10 @@ const namesList = props => {
       </div>
     </p>
   ));
+
   return (
     <div className="namesList">
+        <h3>"Beholdning","Avkastning siste måned","Fond","Beskrivelse"</h3>
       {listItems.reverse()}
     </div>
   );
