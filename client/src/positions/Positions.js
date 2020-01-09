@@ -34,7 +34,8 @@ class Positions extends Component {
           {
             name: res.data[i].instrument.name,
             percent: res.data[i].percent,
-            color: this.state.colorScale[i]
+            color: this.state.colorScale[i],
+            url: res.data[i].instrument.prospectus_url,
           }
         ]
       });
@@ -64,7 +65,6 @@ class Positions extends Component {
       <div className="markets">
         <h2>Fondets fordeling</h2>
         <div className="positions">
-          <PieChart state={this.state} />
           <NamesList state={this.state} />
         </div>
       </div>

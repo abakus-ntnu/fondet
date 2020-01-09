@@ -5,8 +5,7 @@ const namesList = props => {
   const listItems = props.state.data.map(data => (
     <p key={`${data.name}`}>
       <div className="name">
-        <span style={{ color: data.color, fontSize: 20 }}>{"\u2022"}</span>{" "}
-        <p>{data.name}</p>{" "}
+        <a href={data.url}>{data.name}</a>{" "}
         <p>
           {data.percent.toFixed(2)} {" %"}
         </p>
