@@ -8,7 +8,7 @@ const Development = () => {
         url="https://www.shareville.no/widget/portfolio/324475/yield?period=180"
         scrolling="yes"
         width="80%"
-        height="300px"
+        height="270px"
         margin="auto"
         display= "inline-block"
         overflow="hidden"
