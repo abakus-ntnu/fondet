@@ -20,7 +20,7 @@ html{
   border-width: 1px;
   overflow: hidden;
   padding-right: 5px;
-  height: 350px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -68,13 +68,14 @@ html{
 }
 
 .namesList {
-  height: auto;
+  height: 100%;
+  width:60%;
 }
 
-.namesList p {
+a.name {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "arial";
+  text-decoration: none;
 }
 
 .pieChart {
@@ -174,5 +175,4 @@ iframe{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
 }
