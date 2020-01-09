@@ -14,7 +14,6 @@ class App extends Component {
           <HeaderWrap/>
         <Development />
         <Positions />
-        <Numbers />
         <Philosophy />
         <History />
       </div>

@@ -99,7 +99,7 @@ html{
   font-size: 0;
   line-height: 0
 }
-.header h1{
+.header a{
   display: flex;
   align-items: center;
   font-size: 40px;
@@ -121,7 +121,7 @@ html{
   justify-content: right;
   margin-left:auto;
 }
-h1.header.right{
+a.header.right{
   text-align:right;
 }
 

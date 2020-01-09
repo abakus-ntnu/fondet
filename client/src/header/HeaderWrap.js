@@ -5,8 +5,8 @@ class HeaderWrap extends Component {
   render() {
     return <div className={"headerWrap"}>
       <Header className="header left stretch" text="Abakus fond" />
-      <Header className="header center stretch" text="abakus.no/fond" />
-      <Header className="header right stretch" text="Statutter" />
+      <Header className="header center stretch" text="abakus.no/fond" href={"https://abakus.no/pages/generelt/46-fondstyret"}/>
+      <Header className="header right stretch" text="Statutter" href={"https://statutter.abakus.no/fond/"}/>
     </div>;
   }
 }
