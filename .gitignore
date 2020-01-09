@@ -3,3 +3,4 @@ build
 .idea
 client/node_modules
 client/yarn.lock
+yarn.lock
