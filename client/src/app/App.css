@@ -1,5 +1,13 @@
+html{
+  background-color: gray;
+}
+
+.app{
+  background-color:white;
+
+}
 .development {
-  height: 320px;
+  height: 500px;
   border-style: solid;
   border-width: thin;
   border-color: beige;
@@ -94,6 +102,8 @@
 
 .app {
   overflow: hidden;
+  width: 1000px;
+  margin:auto;
   display: flex;
   flex-direction: column;
   align-items: center;

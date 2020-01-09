@@ -8,7 +8,7 @@ import Numbers from "../numbers/Numbers.js";
 class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div className="app" >
         <Header text="ABAKUS FOND" />
         <Development />
         <Positions />
