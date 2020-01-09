@@ -5,9 +5,13 @@ const Development = () => {
   return (
     <div className="development">
       <Iframe
-        url="https://www.shareville.no/widget/portfolio/324475/yield"
+        url="https://www.shareville.no/widget/portfolio/324475/yield?period=180"
         scrolling="yes"
-        position="relative"
+        width="80%"
+        height="300px"
+        margin="auto"
+        display= "inline-block"
+        overflow="hidden"
       />
     </div>
   );

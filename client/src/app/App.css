@@ -1,17 +1,16 @@
 html{
-  background-color: gray;
+  background: linear-gradient(0deg,#f4f4f4,#eae9e8);
 }
 
-.app{
-  background-color:white;
-
-}
 .development {
-  height: 500px;
   border-style: solid;
   border-width: thin;
   border-color: beige;
   width: 100%;
+  text-align:center;
+  padding-top:50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .positions {
@@ -102,7 +101,8 @@ html{
 
 .app {
   overflow: hidden;
-  width: 1000px;
+  width: 80vw;
+  background-color: white;
   margin:auto;
   display: flex;
   flex-direction: column;
