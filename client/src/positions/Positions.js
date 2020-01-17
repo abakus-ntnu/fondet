@@ -36,6 +36,8 @@ class Positions extends Component {
             percent: res.data[i].percent,
             color: this.state.colorScale[i],
             url: res.data[i].instrument.prospectus_url,
+            desc: res.data[i].instrument.category,
+            one_month: res.data[i].instrument.performance_one_month,
           }
         ]
       });

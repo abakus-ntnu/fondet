@@ -61,7 +61,6 @@ p {
   width:60%;
 }
 
-<<<<<<< HEAD
 .history {
   width: 80%;
 }
@@ -70,10 +69,16 @@ p {
   width: 80%;
 }
 
-.namesList p {
+.namesList {
+  height: 100%;
+  width:60%;
+}
+
+a.name {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: Raleway,Helvetica Neue,Arial,sans-serif;
+  text-decoration: none;
 }
 
 .pieChart {
