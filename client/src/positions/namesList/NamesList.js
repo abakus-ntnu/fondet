@@ -15,10 +15,10 @@ const namesList = props => {
         </tr>
   ));
   listItems.push(<tr key={"header"}>
-      <th>{"Last 180 days"}</th>
-      <th>{"Last Month"}</th>
-      <th>{"Name"}</th>
-      <th>{"Description"}</th>
+      <th>{"Eierandel"}</th>
+      <th>{"Utvikling siste måned"}</th>
+      <th>{"Navn"}</th>
+      <th>{"Beskrivelse"}</th>
   </tr>);
 
   return (
