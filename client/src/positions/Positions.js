@@ -67,7 +67,7 @@ class Positions extends Component {
       <div className="markets">
         <h2>Fondets fordeling</h2>
         <div className="positions">
-          <NamesList state={this.state} />
+            <NamesList state={this.state} />
         </div>
       </div>
     );
