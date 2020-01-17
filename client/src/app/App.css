@@ -38,33 +38,35 @@ html{
 
 .markets h2 {
   font-size: 35px;
-  color: gray;
-  font-family: "VT323", monospace;
-  letter-spacing: 10px;
+  color: #394b59;
+  font-family: Raleway,Helvetica Neue,Arial,sans-serif;
   text-align: center;
 }
 
-.philosophy h2 {
+h2 {
   font-size: 35px;
-  color: gray;
-  font-family: "VT323", monospace;
-  letter-spacing: 10px;
+  color: #394b59;
+  font-family: Raleway,Helvetica Neue,Arial,sans-serif;
   text-align: center;
 }
 
-.philosophy p {
+p {
   color: #394b59;
   font-size: 20px;
-  font-family: Raleway, Helvetica Neue, Arial, sans-serif;
+  font-family: Raleway,Helvetica Neue,Arial,sans-serif;
 }
 
-.development h2 {
-  font-size: 25px;
-  color: gray;
-  font-family: Courier New, Courier, monospace;
-  letter-spacing: 4px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+.namesList {
+  height: 100%;
+  width:60%;
+}
+
+.history {
+  width: 80%;
+}
+
+.philosophy {
+  width: 80%;
 }
 
 .namesList {
@@ -75,12 +77,14 @@ html{
 a.name {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: Raleway,Helvetica Neue,Arial,sans-serif;
   text-decoration: none;
 }
 
 .pieChart {
   height: auto;
 }
+
 .headerWrap {
   background: #758586;
   width:100%;
@@ -107,8 +111,7 @@ a.name {
   color: white;
   height: 100px;
   width: 100%;
-  font-family: "VT323", monospace;
-  letter-spacing: 10px;
+  font-family: Raleway,Helvetica Neue,Arial,sans-serif;
 }
 .header.left{
   padding-left: 50px;
