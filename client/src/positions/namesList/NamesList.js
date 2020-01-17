@@ -3,23 +3,26 @@ import React from "react";
 const namesList = props => {
   console.log(props.state.data);
   const listItems = props.state.data.map(data => (
-    <p key={`${data.name}`}>
-      <div className="name">
-          <p>
-              {data.percent.toFixed(2)} {" %"}
-          </p>
-          <p>
-              {(data.one_month ? data.one_month : 0) + " %"}
-          </p>
-          <a href={data.url}>{data.name}</a>{" "}
-          <p>{data.desc}</p>
-      </div>
-    </p>
+        <tr key={`${data.name}`}>
+              <td>
+                  {data.percent.toFixed(2)} {" %"}
+              </td>
+              <td>
+                  {(data.one_month ? data.one_month : 0) + " %"}
+              </td>
+              <td href={data.url}>{data.name}</td>{" "}
+              <td>{data.desc}</td>
+        </tr>
   ));
+  listItems.push(<tr key={"header"}>
+      <th>{"Last 180 days"}</th>
+      <th>{"Last Month"}</th>
+      <th>{"Name"}</th>
+      <th>{"Description"}</th>
+  </tr>);
 
   return (
     <div className="namesList">
-        <h3>"Beholdning","Avkastning siste måned","Fond","Beskrivelse"</h3>
       {listItems.reverse()}
     </div>
   );
