@@ -61,7 +61,7 @@ p {
   width: 80%;
 }
 
-.namesList p,a,td{
+.namesList p,a,td,th{
   height: 100%;
   font-family: Raleway,Helvetica Neue,Arial,sans-serif;
   text-decoration: none;
