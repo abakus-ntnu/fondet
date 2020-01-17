@@ -10,7 +10,7 @@ const namesList = props => {
               <td>
                   {(data.one_month ? data.one_month : 0) + " %"}
               </td>
-              <td href={data.url}>{data.name}</td>{" "}
+              <td><a href={data.url}>{data.name}</a></td>{" "}
               <td>{data.desc}</td>
         </tr>
   ));
