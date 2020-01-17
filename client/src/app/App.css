@@ -61,8 +61,18 @@ p {
   width: 80%;
 }
 
-.namesList {
+.namesList p,a,td{
   height: 100%;
+  font-family: Raleway,Helvetica Neue,Arial,sans-serif;
+  text-decoration: none;
+  color:#394b59;
+}
+
+.redText{
+  color:rgb(255,25,0);
+}
+.greenText{
+  color:#00d200;
 }
 
 table{
@@ -75,16 +85,15 @@ th{
   color: white;
 }
 th,td{
-  width: 150px;
   text-align: center;
   padding: 5px;
 }
-
+tr{
+  width: 60%;
+}
 a.name {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: Raleway,Helvetica Neue,Arial,sans-serif;
-  text-decoration: none;
 }
 
 .pieChart {

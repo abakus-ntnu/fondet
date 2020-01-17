@@ -7,10 +7,10 @@ const namesList = props => {
               <td>
                   {data.percent.toFixed(2)} {" %"}
               </td>
-              <td>
+              <td className={data.one_month<0 ?  "redText":"greenText"}>
                   {(data.one_month ? data.one_month : 0) + " %"}
               </td>
-              <td><a href={data.url}>{data.name}</a></td>{" "}
+              <td><a className={"name"} href={data.url}>{data.name}</a></td>{" "}
               <td>{data.desc}</td>
         </tr>
   ));
