@@ -9,15 +9,15 @@ const namesList = props => {
               <td>{data.desc}</td>
         </tr>
   ));
-  listItems.push(<tr key={"header"}>
-      <th>{"Eierandel"}</th>
-      <th>{"Utvikling siste måned"}</th>
-      <th>{"Navn"}</th>
-      <th>{"Beskrivelse"}</th>
-  </tr>);
 
   return (
     <table className="namesList">
+        <thead key={"header"}>
+            <th>{"Eierandel"}</th>
+            <th>{"Utvikling siste måned"}</th>
+            <th>{"Navn"}</th>
+            <th>{"Beskrivelse"}</th>
+        </thead>
         <tbody>{listItems.reverse()}</tbody>
     </table>
   );

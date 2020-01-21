@@ -80,9 +80,9 @@ p {
 }
 
 table{
-  border-collapse:separate;
   border-spacing: 0 15px;
   margin: 0 auto;
+    border-collapse: separate;
 }
 th{
   background-color:#c0392b;
