@@ -203,7 +203,7 @@ iframe{
 /*Ekstra for tilpassning til mobil*/
 @media only screen and (max-width: 1000px) {
     .app{
-        width: 100vw !important;
+        width: 100vw;
     }
     .iframeDev{
         width:100%;
