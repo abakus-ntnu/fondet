@@ -1,16 +1,11 @@
 import React from "react";
 
 const namesList = props => {
-  console.log(props.state.data);
   const listItems = props.state.data.map(data => (
         <tr key={`${data.name}`}>
-              <td>
-                  {data.percent.toFixed(2)} {" %"}
-              </td>
-              <td className={data.one_month<0 ?  "redText":"greenText"}>
-                  {(data.one_month ? data.one_month : 0) + " %"}
-              </td>
-              <td><a className={"name"} href={data.url}>{data.name}</a></td>{" "}
+              <td>{data.percent.toFixed(2)} {" %"}</td>
+              <td className={data.one_month<0 ?  "redText":"greenText"}>{(data.one_month ? data.one_month : 0) + " %"}</td>
+              <td><a className={"name"} href={data.url}>{data.name}</a></td>
               <td>{data.desc}</td>
         </tr>
   ));
@@ -22,9 +17,9 @@ const namesList = props => {
   </tr>);
 
   return (
-    <div className="namesList">
-      {listItems.reverse()}
-    </div>
+    <table className="namesList">
+        <tbody>{listItems.reverse()}</tbody>
+    </table>
   );
 };
 

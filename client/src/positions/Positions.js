@@ -55,7 +55,6 @@ class Positions extends Component {
       ]
     });
     this.setState({ data: this.state.data.sort(this.sortData) });
-    console.log(this.state);
   }
 
   sortData = (a, b) => {
