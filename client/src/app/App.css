@@ -6,10 +6,13 @@ html{
   border-style: solid;
   border-width: thin;
   border-color: beige;
-  width: 100%;
+  width:100%;
   text-align:center;
   align-items: center;
   justify-content: center;
+}
+.iframeDev{
+    width: 80%;
 }
 
 .positions {
@@ -196,4 +199,13 @@ iframe{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+/*Ekstra for tilpassning til mobil*/
+@media only screen and (max-width: 1000px) {
+    .app{
+        width: 100vw !important;
+    }
+    .iframeDev{
+        width:100%;
+    }
 }
