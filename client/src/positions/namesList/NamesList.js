@@ -13,10 +13,12 @@ const namesList = props => {
   return (
     <table className="namesList">
         <thead key={"header"}>
-            <th>{"Eierandel"}</th>
-            <th>{"Utvikling siste måned"}</th>
-            <th>{"Navn"}</th>
-            <th>{"Beskrivelse"}</th>
+            <tr>
+                <th>{"Eierandel"}</th>
+                <th>{"Utvikling siste måned"}</th>
+                <th>{"Navn"}</th>
+                <th>{"Beskrivelse"}</th>
+            </tr>
         </thead>
         <tbody>{listItems.reverse()}</tbody>
     </table>
