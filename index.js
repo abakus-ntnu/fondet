@@ -1,8 +1,11 @@
-const express = require("express");
+const content = document.getElementById("container");
+const url =
+  "http://78.46.252.118/repeat?url=https://www.shareville.no/api/v1/portfolios/324475/positions";
 
-const app = express();
-
-require("./nordnetRoute.js")(app);
-
-const PORT = 5000;
-app.listen(PORT);
+fetch(url, {
+  headers: {
+    "Access-Control-Allow-Origin": "*"
+  }
+})
+  .then(res => res.json())
+  .then(res => (content.innerHTML = JSON.stringify(res)));
