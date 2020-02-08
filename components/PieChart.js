@@ -7,7 +7,6 @@ const renderLabel = function(entry) {
 };
 
 const Chart = props => {
-  console.log(props.positions);
   return (
     <PieChart width={1000} height={280}>
       <Pie
