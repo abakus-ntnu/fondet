@@ -1,13 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Header extends Component {
-  render() {
-    return (
-      <div className={this.props.className}>
-        <a href={this.props.href}>{this.props.text}</a>
-      </div>
-    );
-  }
-}
+const Header = () => (
+  <div className={"header"}>
+    <img src="logo.png" height="40px" />
+    <h2>For deg og fremtidige abakuler</h2>
+    <h1>Fondet</h1>
+  </div>
+);
 
 export default Header;

@@ -21,3 +21,5 @@ yarn-error.log*
 
 # Avoid npm
 package-lock.json
+
+.now

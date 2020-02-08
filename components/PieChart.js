@@ -1,25 +1,31 @@
 import React from "react";
-import { VictoryPie } from "victory";
+import { PieChart, Pie, Legend, Tooltip, Cell } from "recharts";
+import { colorScale } from "./Positions";
 
-const pieChart = props => {
-  const colorList = props.state.data.reverse().map(data => data.color);
+const renderLabel = function(entry) {
+  return `${entry.name} - ${entry.value} % `;
+};
+
+const Chart = props => {
+  console.log(props.positions);
   return (
-    <div className="pieChart">
-      <VictoryPie
-        data={props.state.data}
-        sortKey="percent"
-        sortOrder="descending"
-        x="name"
-        y="percent"
-        radius={150}
-        labels={d => `${d.percent.toFixed(2)}%`}
-        labelRadius={120}
-        style={{ labels: { fontSize: 10, color: "black" } }}
-        colorScale={colorList}
-        padding={{ top: 20, bottom: 60 }}
-      />
-    </div>
+    <PieChart width={1000} height={280}>
+      <Pie
+        data={props.positions}
+        innerRadius={30}
+        outerRadius={100}
+        label={renderLabel}
+      >
+        {props.positions.map((entry, index) => (
+          <Cell
+            key={`cell-${index}`}
+            fill={colorScale[index % colorScale.length]}
+          />
+        ))}
+      </Pie>
+      <Tooltip />
+    </PieChart>
   );
 };
 
-export default pieChart;
+export default Chart;

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-
-import HeaderWrap from "../components/HeaderWrap.js";
-import Positions from "../components/Positions.js";
-import Development from "../components/Development.js";
-import Numbers from "../components/Numbers.js";
-import Philosophy from "../components/Philosophy.js";
-import History from "../components/History.js";
+import {
+  Development,
+  Positions,
+  Philosophy,
+  History,
+  Header
+} from "../components";
 
 import "./index.css";
 
@@ -22,12 +22,15 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="app">
-      <HeaderWrap />
-      <Development />
-      <Positions positions={positions} />
-      <Philosophy />
-    </div>
+    <>
+      <Header />
+      <div className="container">
+        <Development />
+        <Philosophy />
+        <Positions positions={positions} />
+        <History />
+      </div>
+    </>
   );
 };
 
