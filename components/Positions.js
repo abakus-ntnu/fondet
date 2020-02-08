@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
-import PieChart from "./pieChart/PieChart.js";
-import NamesList from "./namesList/NamesList.js";
+import PieChart from "./PieChart.js";
+import NamesList from "./NamesList.js";
 
 class Positions extends Component {
   constructor() {
@@ -22,7 +22,7 @@ class Positions extends Component {
       ]
     };
   }
-  //Getting info from backend and cleaning for victorypie. Backend fetching from nordnet api.
+
   async componentDidMount() {
     const res = await axios.get("/api/positions");
     this.setState({ res: res.data });
@@ -37,7 +37,7 @@ class Positions extends Component {
             color: this.state.colorScale[i],
             url: res.data[i].instrument.prospectus_url,
             desc: res.data[i].instrument.category,
-            one_month: res.data[i].instrument.performance_one_month,
+            one_month: res.data[i].instrument.performance_one_month
           }
         ]
       });
@@ -66,7 +66,7 @@ class Positions extends Component {
       <div className="markets">
         <h2>Fondets fordeling</h2>
         <div className="positions">
-            <NamesList state={this.state} />
+          <NamesList state={this.state} />
         </div>
       </div>
     );
