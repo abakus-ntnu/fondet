@@ -21,9 +21,10 @@
   },
   "homepage": "https://github.com/abakus-ntnu/fondet#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "next": "^9.1.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "axios": "^0.18.0"
+    "victory": "^34.1.1"
   }
 }
