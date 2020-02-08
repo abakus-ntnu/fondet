@@ -1,7 +1,7 @@
 import React from "react";
 
 const namesList = props => {
-  const listItems = props.state.data.map(data => (
+  const listItems = props.positions.map(data => (
     <tr key={`${data.name}`}>
       <td>
         {data.percent.toFixed(2)} {" %"}
@@ -28,7 +28,7 @@ const namesList = props => {
           <th>{"Beskrivelse"}</th>
         </tr>
       </thead>
-      <tbody>{listItems.reverse()}</tbody>
+      <tbody>{listItems}</tbody>
     </table>
   );
 };
