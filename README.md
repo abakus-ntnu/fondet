@@ -1,10 +1,17 @@
 # Fondet Infopage
 
-## Deploy
+## Development
 
-Deploy your own Next.js project with ZEIT Now.
+```shell
+# Install plugins
+$ yarn
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now/tree/master/examples/nextjs)
+# Running a serverless function call from the API folder, so one must build
+$ yarn build
+
+# Start dev server
+$ yarn dev
+```
 
 ## Deploying From Your Terminal
 
