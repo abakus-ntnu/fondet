@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import {
   Development,
   Positions,
   Philosophy,
   History,
-  Header
-} from "../components";
+  Header,
+} from '../components';
 
-import "./index.css";
+import './index.css';
 
 const Index = () => {
   const [positions, setPositions] = useState([]);
 
   useEffect(() => {
     async function getPositions() {
-      const res = await fetch("/api/positions");
+      const res = await fetch('/api/positions');
       const data = await res.json();
       setPositions(data);
     }

@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:eslint": "eslint . --ignore-path .prettierignore",
+    "lint:prettier": "prettier '**/*.{js,css,md}' --check",
+    "lint": "yarn lint:eslint && yarn lint:prettier"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,15 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
