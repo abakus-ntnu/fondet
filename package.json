@@ -1,13 +1,11 @@
 {
   "name": "fondet",
-  "version": "1.0.0",
-  "description": "backend til fondet.abakus.no",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "fondet infopage",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -17,19 +15,15 @@
     "fondet",
     "abakus"
   ],
-  "author": "Collatty",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/abakus-ntnu/fondet/issues"
   },
   "homepage": "https://github.com/abakus-ntnu/fondet#readme",
   "dependencies": {
-    "axios": "^0.18.0",
-    "express": "^4.16.4",
-    "yarn": "^1.21.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.5",
-    "concurrently": "^4.0.1"
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "axios": "^0.18.0"
   }
 }

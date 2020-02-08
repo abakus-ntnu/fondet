@@ -1,12 +1,15 @@
-This project has two folder structures. This is the backend, and documentation for the client can be seen in the `client` folder.
+# Fondet Infopage
 
-To start development and run the client and the backend at the same time - Run
+## Deploy
 
-$ yarn server
-$ yarn client
+Deploy your own Next.js project with ZEIT Now.
 
-If this is your first time running the project, you have to install the NPM packages first. This is done by first.
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/now/tree/master/examples/nextjs)
 
-$ yarn
-$ cd client
-$ yarn
+## Deploying From Your Terminal
+
+You can deploy this Next.js project with a single command from your terminal using [Now CLI](https://zeit.co/download):
+
+```shell
+$ now
+```
