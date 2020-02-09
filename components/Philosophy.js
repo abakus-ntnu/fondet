@@ -20,6 +20,32 @@ const Philosophy = () => (
       hovedsakelig brukt fordi vi i Fondstyret ikke tror vi kan slå markedet
       over tid, og dermed foretrekker forutsigbarhet.
     </p>
+    <p>
+      <a
+        href="https://abakus.no/pages/generelt/46-fondstyret"
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          background: '#eee',
+          padding: '10px',
+          borderRadius: '10px',
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p>Fondet styres av fondstyret</p>
+        <img
+          alt="fondstyret"
+          width="30px"
+          src="fond.png"
+          style={{ padding: '10px' }}
+        />
+        <p>
+          Les mer på
+          <span style={{ color: '#e20d13' }}> abakus.no</span>
+        </p>
+      </a>
+    </p>
   </div>
 );
 
