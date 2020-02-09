@@ -3,7 +3,8 @@ import React from 'react';
 const namesList = props => {
   const listItems = props.positions.map(data => {
     // Returns a style object
-    const color = data.one_month < 0 ? { color: 'red' } : { color: 'green' };
+    const color =
+      data.one_month < 0 ? { color: '#c0392b' } : { color: 'green' };
 
     return (
       <tr key={`${data.name}`}>

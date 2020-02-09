@@ -42,7 +42,7 @@ const Philosophy = () => (
         />
         <p>
           Les mer på
-          <span style={{ color: '#e20d13' }}> abakus.no</span>
+          <span style={{ color: '#c0392b' }}> abakus.no</span>
         </p>
       </a>
     </p>

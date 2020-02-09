@@ -26,11 +26,14 @@ $ yarn lint:eslint
 
 # Run prettier
 $ yarn lint:prettier
-
-## Deploying From Your Terminal
-
-You can deploy this Next.js project with a single command from your terminal using [Now CLI](https://zeit.co/download):
-
-```shell
-$ now
 ```
+
+## Deployment
+
+This project is deployed and hosted using ZEIT, running on the **abakus-nutu** ZEIT user/github team.
+
+Every time a new branch is pushed to this repo, `zeit` will build a working test page, and hand you a generated link
+where you can preview and share a live verison of the page.
+
+When you are ready to a new verison to **fondet.abakus.no**, you merge your branch with master, and `zeit` will run a
+`--prod` version. This will result in a new version of `fondet.abakus.no`.

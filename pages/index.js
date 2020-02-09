@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
   Development,
+  Apply,
   Positions,
   Philosophy,
   History,
@@ -27,6 +28,7 @@ const Index = () => {
       <div className="container">
         <Development />
         <Philosophy />
+        <Apply />
         <Positions positions={positions} />
         <History />
       </div>
