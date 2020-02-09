@@ -1,15 +1,36 @@
-This project has two folder structures. This is the backend, and documentation for the client can be seen in the `client` folder.
+# Fondet Infopage
 
-To start development and run the client and the backend at the same time - Run
+## Development
 
-$ yarn server
-$ yarn client
-
-To start both concurrently, try:
-$ npm run dev
-
-If this is your first time running the project, you have to install the NPM packages first. This is done by first.
-
+```shell
+# Install plugins
 $ yarn
-$ cd client
-$ yarn
+
+# Running a serverless function call from the API folder, so one must build
+$ yarn build
+
+# Start dev server
+$ yarn dev
+```
+
+## Check code
+
+The project has `eslint` and `prettier` as dev dependencies
+
+```shell
+# Run all checks
+$ yarn lint
+
+# Run eslint
+$ yarn lint:eslint
+
+# Run prettier
+$ yarn lint:prettier
+
+## Deploying From Your Terminal
+
+You can deploy this Next.js project with a single command from your terminal using [Now CLI](https://zeit.co/download):
+
+```shell
+$ now
+```

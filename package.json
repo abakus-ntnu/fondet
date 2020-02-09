@@ -1,31 +1,48 @@
 {
   "name": "fondet",
-  "version": "1.0.0",
-  "description": "backend til fondet.abakus.no",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "fondet infopage",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint:eslint": "eslint . --ignore-path .prettierignore",
+    "lint:prettier": "prettier '**/*.{js,css,md}' --check",
+    "lint": "yarn lint:eslint && yarn lint:prettier"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abakus-ntnu/fondet.git"
   },
-  "keywords": ["fondet", "abakus"],
-  "author": "Collatty",
-  "license": "ISC",
+  "keywords": [
+    "fondet",
+    "abakus"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/abakus-ntnu/fondet/issues"
   },
   "homepage": "https://github.com/abakus-ntnu/fondet#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "axios": "^0.18.0",
-    "express": "^4.16.4"
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-iframe": "^1.8.0",
+    "recharts": "^2.0.0-beta.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.5",
-    "concurrently": "^4.0.1"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
