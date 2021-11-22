@@ -16,7 +16,7 @@ const Philosophy = () => (
       en større sum investert. Dette reduserer risikoen for at vi taper penger
       ved å investere i en 'topp', men det reduserer også sannsynligheten for at
       vi tjener penger på å investere i en 'bunn'. Denne metoden blir
-      hovedsakelig brukt fordi vi i Fondstyret ikke tror vi kan slå markedet
+      hovedsakelig brukt fordi vi i Fondsstyret ikke tror vi kan slå markedet
       over tid, og dermed foretrekker forutsigbarhet.
     </p>
     <p>
@@ -32,9 +32,9 @@ const Philosophy = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p>Fondet styres av fondstyret</p>
+        <p>Fondet styres av fondsstyret</p>
         <img
-          alt="fondstyret"
+          alt="fondsstyret"
           width="30px"
           src="fond.png"
           style={{ padding: '10px' }}

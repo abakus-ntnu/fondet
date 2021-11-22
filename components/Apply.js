@@ -7,8 +7,8 @@ const Apply = () => (
       For å kunne få støtte fra fondet, må man sende en søknad til Fondsstyret.
       Medlemmene av Fondsstyret avgjør så om søknaden kan godkjennes. Bruk
       søknadsmalen og send den til
-      <a href="mailto:fondstyret@abakus.no">
-        <span style={{ color: '#c0392b' }}> fondstyret@abakus.no</span>
+      <a href="mailto:fondsstyret@abakus.no">
+        <span style={{ color: '#c0392b' }}> fondsstyret@abakus.no</span>
       </a>
     </p>
     <p>
