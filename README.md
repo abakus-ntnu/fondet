@@ -32,7 +32,8 @@ $ yarn lint:prettier
 
 This project is deployed and hosted on Vercel, running on the **abakus-nutu** Vercel user/github team.
 
-![Powered by vercl](./public/powered-by-vercel.svg)
-<img src="./public/powered-by-vercel.svg">
-
 When you are ready to a new verison to **fondet.abakus.no**, you merge your branch with master, and `vercel` will run a `--prod` version. This will result in a new version of `fondet.abakus.no`.
+
+<a href="https://vercel.com/?utm_source=team_XD0ckB9pO5pVMJVVqyDd9zDp&utm_campaign=oss" target="_blank">
+  ![Powered by vercel](./public/powered-by-vercel.svg)
+</a>
