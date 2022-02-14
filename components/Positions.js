@@ -3,8 +3,8 @@ import React from 'react';
 import List from './List';
 import PieChart from './PieChart';
 
-const Positions = props => {
-  const formattedPositions = props.positions.map(position => ({
+function Positions(props) {
+  const formattedPositions = props.positions.map((position) => ({
     name: position.instrument.name,
     value: parseFloat(position.percent.toFixed(2)),
     url: position.instrument.prospectus_url,
@@ -27,6 +27,6 @@ const Positions = props => {
       <List positions={data} />
     </div>
   );
-};
+}
 
 export default Positions;

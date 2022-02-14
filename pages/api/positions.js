@@ -10,6 +10,6 @@ export default (req, res) => {
   });
   instance
     .get('https://www.shareville.no/api/v1/portfolios/324475/positions')
-    .then(response => res.send(response.data))
-    .catch(error => res.send(error));
+    .then((response) => res.send(response.data))
+    .catch((error) => res.send(error));
 };

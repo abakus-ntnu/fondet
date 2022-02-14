@@ -9,7 +9,7 @@ import {
   Footer,
 } from '../components';
 
-const Index = () => {
+function Index() {
   const [positions, setPositions] = useState([]);
 
   useEffect(() => {
@@ -34,6 +34,6 @@ const Index = () => {
       </div>
     </>
   );
-};
+}
 
 export default Index;

@@ -23,5 +23,6 @@ module.exports = {
     'react/no-unescaped-entities': 0,
     'react/prop-types': [0, { ignore: [] }],
     'object-curly-newline': 0,
+    'react/jsx-one-expression-per-line': 0,
   },
 };
