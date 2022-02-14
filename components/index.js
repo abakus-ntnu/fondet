@@ -6,3 +6,4 @@ export { default as List } from './List';
 export { default as Philosophy } from './Philosophy';
 export { default as PieChart } from './PieChart';
 export { default as Positions } from './Positions';
+export { default as Footer } from './Footer';

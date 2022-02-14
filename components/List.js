@@ -1,7 +1,7 @@
 import React from 'react';
 
-const namesList = props => {
-  const listItems = props.positions.map(data => {
+const namesList = (props) => {
+  const listItems = props.positions.map((data) => {
     // Returns a style object
     const color =
       data.one_month < 0 ? { color: '#c0392b' } : { color: 'green' };

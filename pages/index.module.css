@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.header {
+  background: #333;
+  color: #eee;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.container {
+  overflow: hidden;
+  width: 80vw;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.shareville {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: -60px; /* cuts the top part of graph */
+}
+
+.iframe {
+  width: 80%;
+  animation: cssAnimation 0s 2s forwards;
+  visibility: hidden;
+  border: none;
+}
+@keyframes cssAnimation {
+  to {
+    visibility: visible;
+  }
+}
+
+.positions {
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

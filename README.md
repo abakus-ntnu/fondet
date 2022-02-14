@@ -30,10 +30,9 @@ $ yarn lint:prettier
 
 ## Deployment
 
-This project is deployed and hosted using ZEIT, running on the **abakus-nutu** ZEIT user/github team.
+This project is deployed and hosted on Vercel, running on the **abakus-nutu** Vercel user/github team.
 
-Every time a new branch is pushed to this repo, `zeit` will build a working test page, and hand you a generated link
-where you can preview and share a live verison of the page.
+![Powered by vercl](./public/powered-by-vercel.svg)
+<img src="./public/powered-by-vercel.svg">
 
-When you are ready to a new verison to **fondet.abakus.no**, you merge your branch with master, and `zeit` will run a
-`--prod` version. This will result in a new version of `fondet.abakus.no`.
+When you are ready to a new verison to **fondet.abakus.no**, you merge your branch with master, and `vercel` will run a `--prod` version. This will result in a new version of `fondet.abakus.no`.

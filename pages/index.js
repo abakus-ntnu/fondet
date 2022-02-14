@@ -6,9 +6,8 @@ import {
   Philosophy,
   History,
   Header,
+  Footer,
 } from '../components';
-
-import './index.css';
 
 const Index = () => {
   const [positions, setPositions] = useState([]);
@@ -31,6 +30,7 @@ const Index = () => {
         <Apply />
         <Positions positions={positions} />
         <History />
+        <Footer />
       </div>
     </>
   );
