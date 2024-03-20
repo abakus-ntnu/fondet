@@ -4,6 +4,7 @@ function Philosophy() {
   return (
     <div className="section">
       <h2>Slik er fondet investert</h2>
+      <img alt="a cool summer" src="./81.png" className="sommerfest" />
       <p>
         Fondet består i dag av en fondsportefølje i Nordnet og en høyrentekonto
         i DNB. Pengene i DNB blir investert gradvis – litt hver måned – i åtte
