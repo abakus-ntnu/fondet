@@ -16,7 +16,7 @@ function Apply() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://docs.google.com/document/d/1KvGL2cPSzH8be-h7zgaopd4u6q_C7HWkEvAv3gKvMrg/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1ZyQRF0qssg2RBYV608A6kvzEqjnbuvl9zggH2Vwy-Sw/edit?usp=sharing"
         >
           Her finner du vår
           <span style={{ color: '#c0392b' }}> Søknadsmal</span>
