@@ -5,7 +5,7 @@ function Philosophy() {
     <div className="section">
       <h2>Slik er fondet investert</h2>
       <p>
-        Fondet består i dag av en fondsportefølje i Nordnet og en høyrentekonto
+        Fondet består i dag av en fondsportefølje og en høyrentekonto
         i DNB. Pengene i DNB blir investert gradvis – litt hver måned – i åtte
         ulike fond, spredd over hele verden. For å bestemme hvor mye som blir
         investert hver måned, tas value averaging i bruk.
