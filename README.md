@@ -35,4 +35,3 @@ This project is deployed and hosted on Vercel, running on the **abakus-nutu** Ve
 When you are ready to a new verison to **fondet.abakus.no**, you merge your branch with master, and `vercel` will run a `--prod` version. This will result in a new version of `fondet.abakus.no`.
 
 [![](./public/powered-by-vercel.svg)](https://vercel.com/?utm_source=team_XD0ckB9pO5pVMJVVqyDd9zDp&utm_campaign=oss)
-

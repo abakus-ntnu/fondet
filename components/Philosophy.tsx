@@ -5,9 +5,9 @@ function Philosophy() {
     <div className="section">
       <h2>Slik er fondet investert</h2>
       <p>
-        Fondet består i dag av en fondsportefølje og en høyrentekonto
-        i DNB. Pengene i DNB blir investert gradvis – litt hver måned – i åtte
-        ulike fond, spredd over hele verden. For å bestemme hvor mye som blir
+        Fondet består i dag av en fondsportefølje og en høyrentekonto i DNB.
+        Pengene i DNB blir investert gradvis – litt hver måned – i åtte ulike
+        fond, spredd over hele verden. For å bestemme hvor mye som blir
         investert hver måned, tas value averaging i bruk.
       </p>
       <p>
@@ -20,7 +20,7 @@ function Philosophy() {
         Denne metoden blir hovedsakelig brukt fordi vi i Fondsstyret ikke tror
         vi kan slå markedet over tid, og dermed foretrekker forutsigbarhet.
       </p>
-      <p>
+      <div>
         <a
           href="https://abakus.no/pages/generelt/46-fondstyret"
           style={{
@@ -45,7 +45,7 @@ function Philosophy() {
             <span style={{ color: '#c0392b' }}> abakus.no</span>
           </p>
         </a>
-      </p>
+      </div>
     </div>
   );
 }
