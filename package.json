@@ -25,12 +25,17 @@
   },
   "homepage": "https://github.com/abakus-ntnu/fondet#readme",
   "dependencies": {
+    "@sanity/client": "^6.27.1",
+    "@sanity/vision": "^3.71.2",
     "axios": "^1.7.9",
     "next": "^15.1.6",
+    "next-sanity": "^9.8.42",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-iframe": "^1.8.0",
-    "recharts": "^2.15.0"
+    "recharts": "^2.15.0",
+    "sanity": "^3.71.2",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
