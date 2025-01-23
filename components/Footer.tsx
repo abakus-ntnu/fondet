@@ -11,11 +11,7 @@ function Footer() {
         marginTop: '50px',
       }}
     >
-      Med{' '}
-      <span role="img" alt="coffee">
-        ☕
-      </span>{' '}
-      av Webkom | for <strong>Abakus</strong>
+      Med <span role="img">☕</span> av Webkom | for <strong>Abakus</strong>
       <a
         href="https://vercel.com/?utm_source=team_XD0ckB9pO5pVMJVVqyDd9zDp&utm_campaign=oss"
         target="blank"
