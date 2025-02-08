@@ -1,6 +1,6 @@
 import { visionTool } from '@sanity/vision';
 import { defineConfig } from 'sanity';
-import { schemaTypes } from './schemas';
+import { schemaTypes } from './sanity/schemas';
 import { structureTool } from 'sanity/structure';
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '';

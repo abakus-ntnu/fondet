@@ -1,0 +1,95 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+trigger:
+  event:
+    exclude:
+      - pull_request
+
+steps:
+  - name: setup
+    image: node:22-alpine
+    when:
+      event: [push]
+      branch:
+        exclude: [build]
+    volumes:
+      - name: yarn_cache
+        path: /tmp/cache
+    commands:
+      - yarn --frozen-lockfile --cache-folder /tmp/cache
+
+  - name: build
+    image: node:22-alpine
+    when:
+      event: [push]
+    depends_on:
+      - setup
+    environment:
+      NEXT_PUBLIC_SANITY_PROJECT_ID:
+        from_secret: SANITY_PROJECT_ID
+      NEXT_PUBLIC_SANITY_DATASET:
+        from_secret: SANITY_DATASET
+    commands:
+      - yarn build
+
+  - name: lint
+    image: node:22-alpine
+    when:
+      event: [push]
+    depends_on:
+      - setup
+    commands:
+      - yarn lint
+
+  - name: typecheck-sanity
+    image: node:22-alpine
+    when:
+      event: [push]
+      branch:
+        exclude: [build]
+    depends_on:
+      - setup
+    environment:
+      NEXT_PUBLIC_SANITY_PROJECT_ID:
+        from_secret: SANITY_PROJECT_ID
+      NEXT_PUBLIC_SANITY_DATASET:
+        from_secret: SANITY_DATASET
+    commands:
+      - apk add --no-cache git
+      - yarn sanity:generate_schema
+      - yarn sanity:typegen
+      - git status --porcelain
+      - sh -c '
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "❌ Sanity types are outdated. Run sanity typegen generate and commit the changes.";
+          git diff;
+          exit 1;
+        else
+          echo "✅ Sanity types are up to date.";
+        fi
+        '
+
+  - name: typescript
+    image: node:22-alpine
+    when:
+      event: [push]
+      branch:
+        exclude: [build]
+    depends_on:
+      - setup
+    commands:
+      - yarn types
+
+volumes:
+  - name: yarn_cache
+    host:
+      path: /tmp/drone-cache/yarn
+
+---
+kind: signature
+hmac: d2aa1c10aa8dd1e6eb233c3fc14702e10fa13406e98f1ec7c91c2b6acd1b5acb
+
+...
