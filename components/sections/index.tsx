@@ -1,4 +1,4 @@
-import { Section } from '../../utils/types';
+import { Section } from '@/utils/types';
 import ParagraphSection from './ParagraphSection';
 import PieChartSection from './PieChartSection';
 
@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Sections = ({ sections }: Props) => {
-  return sections.map((section) => {
+  return sections?.map((section) => {
     if (section._type === 'paragraph-section')
       return <ParagraphSection key={section._key} section={section} />;
     if (section._type === 'piechart-section')

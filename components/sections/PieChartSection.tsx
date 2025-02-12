@@ -1,5 +1,5 @@
 import { PieChart, Pie, Tooltip, Cell, ResponsiveContainer } from 'recharts';
-import { ChartValue, SectionPieChart } from '../../utils/types';
+import { ChartValue, SectionPieChart } from '@/utils/types';
 
 const renderLabel = (entry: ChartValue) => `${entry.label} – ${entry.value} % `;
 
@@ -20,7 +20,7 @@ type Props = {
 };
 
 const PieChartSection = ({ section }: Props) => {
-  const parsedUpdatedAt = new Date(section.updatedAt);
+  const parsedUpdatedAt = new Date(section.updatedAt ?? '');
 
   return (
     <div className="section">
@@ -35,7 +35,7 @@ const PieChartSection = ({ section }: Props) => {
             outerRadius={100}
             label={renderLabel}
           >
-            {section.values.map((entry, i) => (
+            {section.values?.map((entry, i) => (
               <Cell
                 key={entry.label}
                 fill={colorScale[i % colorScale.length]}
