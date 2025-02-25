@@ -12,13 +12,6 @@ function Footer() {
       }}
     >
       Med <span role="img">☕</span> av Webkom | for <strong>Abakus</strong>
-      <a
-        href="https://vercel.com/?utm_source=team_XD0ckB9pO5pVMJVVqyDd9zDp&utm_campaign=oss"
-        target="blank"
-      >
-        <br />
-        <Image src="/powered-by-vercel.svg" alt="me" width="150" height="50" />
-      </a>
     </div>
   );
 }
