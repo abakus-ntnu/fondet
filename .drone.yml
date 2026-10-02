@@ -83,6 +83,37 @@ steps:
     commands:
       - yarn types
 
+  - name: docker
+    image: plugins/docker
+    when:
+      branch:
+        - master
+      event: push
+      status: success
+    depends_on:
+      - build
+      - lint
+      - typecheck-sanity
+      - typescript
+    environment:
+      NEXT_PUBLIC_SANITY_PROJECT_ID:
+        from_secret: SANITY_PROJECT_ID
+      NEXT_PUBLIC_SANITY_DATASET:
+        from_secret: SANITY_DATASET
+    settings:
+      registry: https://registry.webkom.dev
+      repo: registry.webkom.dev/webkom/fondet
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      tags:
+        - version-${DRONE_COMMIT_SHA:0:7}
+        - latest
+      build_args_from_env:
+        - NEXT_PUBLIC_SANITY_PROJECT_ID
+        - NEXT_PUBLIC_SANITY_DATASET
+
 volumes:
   - name: yarn_cache
     host:
@@ -90,6 +121,6 @@ volumes:
 
 ---
 kind: signature
-hmac: d2aa1c10aa8dd1e6eb233c3fc14702e10fa13406e98f1ec7c91c2b6acd1b5acb
+hmac: 57f2aff0d1901b8fd33a99abf91bf7f0ea0d62085860fd0b962647c31890a3be
 
 ...
