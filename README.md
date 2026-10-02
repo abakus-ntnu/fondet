@@ -32,4 +32,4 @@ $ yarn lint:prettier
 
 This project is deployed and self-hosted with Coolify.
 
-When you are ready to deploy a new version to **fondet.abakus.no**, you merge your branch with master, and `coolify` will run a `prod` version. This will result in a new version of `fondet.abakus.no`.
+When you are ready to deploy a new version to **fondet.abakus.no**, you merge your branch with master, ~~and `coolify` will run a `prod` version~~ you have to manually deploy through Webkom's Ansible deploy script. This will result in a new version of `fondet.abakus.no`.
